@@ -1,6 +1,4 @@
-﻿using BGlobalSolutionsExam.Model;
-
-namespace BGlobalSolutionsExam.DataTransferObjects.ReadDtos
+﻿namespace BGlobalSolutionsExam.DataTransferObjects.ReadDtos
 {
     public interface IVehicleDto 
     {

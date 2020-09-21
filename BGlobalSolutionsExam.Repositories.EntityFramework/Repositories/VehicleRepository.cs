@@ -38,21 +38,11 @@ namespace BGlobalSolutionsExam.Repositories.EntityFramework.Repositories
                 IsActive = true
             };
 
-        public Task<bool> Exists(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<IEnumerable<IVehicle>> GetActives()
         {
             var query = _context.Vehicles.Where(f => f.IsActive);
             await query.LoadAsync();
             return query;
-        }
-
-        public Task<IVehicle> GetById(int id)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -1,17 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BGlobalSolutionsExam.DataTransferObjects.Factories.Factories;
 using BGlobalSolutionsExam.DependencyInjection;
-using BGlobalSolutionsExam.Interactors;
-using BGlobalSolutionsExam.Interactors.Persistances;
 using BGlobalSolutionsExam.Repositories.EntityFramework;
-using BGlobalSolutionsExam.Repositories.EntityFramework.Repositories;
-using BGlobalSolutionsExam.Repositories.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -51,7 +41,6 @@ namespace BGlobalSoultionsExam
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }

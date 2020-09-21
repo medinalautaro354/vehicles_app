@@ -1,7 +1,4 @@
 ﻿using BGlobalSolutionsExam.DataTransferObjects.ReadDtos;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BGlobalSolutionsExam.DataTransferObjects.Factories.Dtos
 {
