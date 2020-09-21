@@ -21,7 +21,7 @@ namespace BGlobalSolutionsExam.Repositories.EntityFramework.Repositories
 
         public async Task<IVehicle> Add(IVehicleAdd add)
         {
-            var entry = await _context.AddAsync(MapToEntity(add));
+            var entry = await _context.Vehicles.AddAsync(MapToEntity(add));
 
             await _context.SaveChangesAsync();
 
