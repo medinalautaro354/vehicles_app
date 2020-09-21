@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BGlobalSolutionsExam.DataTransferObjects.Factories\BGlobalSolutionsExam.DataTransferObjects.Factories.csproj" />
+    <ProjectReference Include="..\BGlobalSolutionsExam.DataTransferObjects\BGlobalSolutionsExam.DataTransferObjects.csproj" />
+    <ProjectReference Include="..\BGlobalSolutionsExam.Repositories\BGlobalSolutionsExam.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

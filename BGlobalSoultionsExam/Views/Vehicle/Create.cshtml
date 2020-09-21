@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/create.css" />
+    </head>
+<div class="d-flex justify-content-center">
+
+    <h1>Create</h1>
+</div>
+<hr />
+<div class="container d-flex justify-content-center">
+    <div class="col-md-12 col-sm-12">
+        <div class="row">
+            <div class="col-md-12 align-content-center">
+            <form id="form-vehicle">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="licensePlate" class="control-label">Patente</label>
+                    <input id="licensePlate" name="licensePlate" maxlength="8" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="brand" class="control-label">Marca</label>
+                    <select id="brand" name="brand" class="form-control" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="numberOfDoors" class="control-label">Numero de puertas</label>
+                    <select id="numberOfDoors" name="numberOfDoors" class="form-control" required ></select>
+                </div>
+                <div class="form-group">
+                    <label for="owner" class="control-label">Titular</label>
+                    <select id="owner" name="owner" class="form-control" required ></select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div>
+    <a href="/" class="btn btn-success">Volver</a>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/create.js"></script>
